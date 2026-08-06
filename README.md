@@ -65,19 +65,15 @@ npm run lint
 
 ## Deploy lên GitHub Pages
 
-Project này được host trên GitHub Pages và deploy **tự động bằng GitHub Actions** mỗi khi push lên branch `main`.
-
-Cách deploy:
+Project này được host trên GitHub Pages và deploy từ branch `gh-pages`.
 
 ```bash
-git add .
-git commit -m "Update nội dung"
-git push origin main
+npm run deploy
 ```
 
-Workflow `.github/workflows/deploy.yml` sẽ tự build và đưa lên trang. Có thể xem trạng thái tại tab **Actions** trên GitHub.
+Lệnh này sẽ build và push thư mục `dist/` lên branch `gh-pages` bằng `gh-pages`.
 
-> **Lưu ý:** Sau khi workflow chạy xong, CDN GitHub Pages có thể mất vài phút để cập nhật. Dùng hard refresh (`Ctrl + F5`) để xem bản mới nhất.
+> **Lưu ý:** Sau khi deploy, CDN GitHub Pages có thể mất vài phút để cập nhật. Dùng hard refresh (`Ctrl + F5`) để xem bản mới nhất.
 
 ## Cấu trúc thư mục
 
