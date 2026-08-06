@@ -30,6 +30,16 @@
   color: var(--text-muted);
 }
 
+.info-list a {
+  color: var(--accent);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.info-list a:hover {
+  text-decoration: underline;
+}
+
 .resume-item {
   margin-bottom: 20px;
 }

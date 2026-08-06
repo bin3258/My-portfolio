@@ -20,6 +20,7 @@ const Resume = () => {
             <li><strong>Address:</strong> Thu Duc District, Ho Chi Minh City</li>
             <li><strong>Email:</strong> letai3258@gmail.com</li>
             <li><strong>Phone:</strong> 088 662 4288</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/bin3258/My-portfolio" target="_blank" rel="noreferrer">github.com/bin3258/My-portfolio</a></li>
           </ul>
         </section>
 

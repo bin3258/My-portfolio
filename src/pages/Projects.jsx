@@ -2,7 +2,6 @@ import { useState } from 'react';
 import PageWrapper from '../components/PageWrapper';
 import { projectsData } from '../data/projects';
 import "../styles/Projects.css";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
     const [filter, setFilter] = useState('All');
@@ -36,6 +35,8 @@ const Projects = () => {
 
                             <div className="project-header">
                                 <h3>{project.title}</h3>
+                                {project.subtitle && <p className="project-subtitle">{project.subtitle}</p>}
+                                {project.duration && <span className="project-duration">{project.duration}</span>}
                             </div>
 
                             <div className="project-info">
@@ -47,21 +48,20 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className="project-links">
-                                    <a href={project.github} target="_blank" rel="noreferrer" className="link-btn">
-                                        GitHub
-                                    </a>
-
-                                    {project.demo ? (
-                                        <Link to="/not-found" className="link-btn demo">
-                                            Live Demo
-                                        </Link>
-                                    ) : (
-                                        <button className="link-btn disabled" title="Not deployed yet">
-                                            Coming Soon
-                                        </button>
-                                    )}
-                                </div>
+                                {(project.github || project.demo) && (
+                                    <div className="project-links">
+                                        {project.github && (
+                                            <a href={project.github} target="_blank" rel="noreferrer" className="link-btn">
+                                                GitHub
+                                            </a>
+                                        )}
+                                        {project.demo && (
+                                            <a href={project.demo} target="_blank" rel="noreferrer" className="link-btn demo">
+                                                Live Demo
+                                            </a>
+                                        )}
+                                    </div>
+                                )}
                             </div>
 
                         </article>

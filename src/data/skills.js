@@ -1,6 +1,6 @@
 export const skillsData = {
   technical: [
-    "HTML5, CSS3 (Flexbox, basic Grid)",
+    "HTML, CSS",
     "JavaScript",
     "React.js",
     "React Native",

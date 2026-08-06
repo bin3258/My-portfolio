@@ -76,10 +76,14 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="contact-form-container">
             {showSuccess && (
-              <div className="success-banner">
-                ✅ Thank you! Your message has been sent successfully.
+              <div className="success-banner" role="status">
+                ✅ Demo submitted! Note: this form is a sample and no message was actually sent.
               </div>
             )}
+
+            <p className="demo-note">
+              This is a demo form — it does not send real messages. Please reach me via the contact details on the left.
+            </p>
 
             <form onSubmit={handleSubmit} noValidate>
               <div className="form-group">
@@ -139,7 +143,7 @@ const Contact = () => {
                 className="btn-submit" 
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Sending...' : 'Submit (Demo)'}
               </button>
             </form>
           </div>
