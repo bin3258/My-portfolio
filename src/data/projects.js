@@ -21,6 +21,7 @@ export const projectsData = [
   {
     id: 3,
     title: "Microservices E-commerce System",
+    duration: "15/05/2026 - 17/07/2026",
     desc: "Developed a Microservices-based E-commerce System using Spring Boot and React. Built 17 independent microservices with Spring Cloud, Eureka Server, and API Gateway. Implemented RESTful APIs and inter-service communication using OpenFeign and RabbitMQ. Developed core features: user authentication, product management, shopping cart, order processing, inventory, payment, reviews, and search. Integrated JWT Authentication, VNPay, Redis, Elasticsearch, and Docker Compose. Applied Database per Service architecture using MariaDB and MongoDB. Built and deployed the system with Docker Compose for multi-container orchestration.",
     tech: ["Java", "Spring Boot", "Spring Cloud", "Spring Security", "JWT", "OpenFeign", "RabbitMQ", "MariaDB", "MongoDB", "Redis", "Elasticsearch", "Docker", "React"],
     github: "https://github.com/bin3258/microservice",
